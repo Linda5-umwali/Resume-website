@@ -18,6 +18,11 @@
       background: #f9f9f9;
       color: #111;
     }
+    @media (max-width: 600px) {
+      body {
+        padding-top: 80px;
+      }
+    }
 
     header {
       background: linear-gradient(135deg, #020261 0%, #000429 100%);
@@ -140,7 +145,7 @@
       background: #fff;
       color: #111;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgb(193, 178, 243);
       padding: 20px;
       max-width: 280px;
       flex: 1;
@@ -194,6 +199,13 @@
     body.light-mode .theme-toggle {
       color: #111;
       border-color: #111;
+    }
+
+    @media (max-width: 600px) {
+      .theme-toggle {
+        position: static;
+        margin-top: 10px;
+      }
     }
 
     .reveal {
